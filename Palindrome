@@ -1,0 +1,24 @@
+bool IsPalindrome(string &s)
+
+{
+
+    int n = s.size();
+    int start = 0;
+    int end = n - 1;
+
+    while (start <= end) {
+
+        if (toupper(s[start]) != toupper(s[end])) {
+
+            return false;
+        } else {
+
+            start++;
+            end--;
+        }
+
+    }
+
+    return true;
+
+}
